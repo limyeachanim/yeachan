@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<style>
+			body{
+				background-color:lightgreen;
+			}
+			#div1{
+				height:10%;
+				background-color:green;
+				color:white;
+				font-size:3em;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			#div2{
+				height:80%;
+				background-color:yellow;
+				text-align:center;
+			
+			}
+			.box1{
+				font-size:3em;
+				width:20%;
+				background-color:blue;
+				color:white;
+			}
+			#b1{
+				font-size:3em;
+				color:blue;
+			}
+			#btn1{
+				font-size:3em;
+				width:20%;
+				background-color:red;
+				color:white;
+			}
+		</style>
+		<script>
+				function add()
+				{
+					let a=0, b=0, c=0;
+					a = document.getElementById('add1').value;
+					b = document.getElementById('add2').value;
+					c = parseInt(a) + parseInt(b);
+					document.getElementById('add3').value = c;
+				}
+				
+				function sub()
+				{
+					let a=0, b=0, c=0;
+					a = document.getElementById('sub1').value;
+					b = document.getElementById('sub2').value;
+					c = parseInt(a) - parseInt(b);
+					document.getElementById('sub3').value = c;
+	
+				}
+				function mul()
+				{
+					let a=0, b=0, c=0;
+					a = document.getElementById('mul1').value;
+					b = document.getElementById('mul2').value;
+					c = parseInt(a) * parseInt(b);
+					document.getElementById('mul3').value = c;
+	
+				}
+				function divi()
+				{
+					let a=0, b=0, c=0;
+					a = document.getElementById('divi1').value;
+					b = document.getElementById('divi2').value;
+					c = parseInt(a) / parseInt(b);
+					document.getElementById('divi3').value = c;
+	
+				}
+		</script>
+	</head>
+	<body>
+		<div id='div1'> 계산기 </div>
+		<div id='div2'>
+		<br><br><br><br>  
+			<input type='text' class='box1' id='add1'>
+			<b id='b1'> + </b> 
+			<input type='text' class='box1' id='add2'>
+			&nbsp&nbsp&nbsp
+			<button id='btn1' onclick='add()'>=</button>
+			&nbsp&nbsp&nbsp
+			<input type='text' class='box1' id='add3'>
+			<br><br><br>
+			<input type='text' class='box1' id='sub1'>
+			<b id='b1'> - </b> 
+			<input type='text' class='box1' id='sub2'>
+			&nbsp&nbsp&nbsp
+			<button id='btn1' onclick='sub()'>=</button>
+			&nbsp&nbsp&nbsp
+			<input type='text' class='box1' id='sub3'><br><br><br>
+			<input type='text' class='box1' id='mul1'>
+			<b id='b1'> * </b> 
+			<input type='text' class='box1' id='mul2'>
+			&nbsp&nbsp&nbsp
+			<button id='btn1' onclick='mul()'>=</button>
+			&nbsp&nbsp&nbsp
+			<input type='text' class='box1' id='mul3'><br><br><br>
+			<input type='text' class='box1' id='divi1'>
+			<b id='b1'> / </b> 
+			<input type='text' class='box1' id='divi2'>
+			&nbsp&nbsp&nbsp
+			<button id='btn1' onclick='divi()'>=</button>
+			&nbsp&nbsp&nbsp
+			<input type='text' class='box1' id='divi3'><br><br><br>
+			
+		</div>
+		<div id='div1'> 메카트로닉스과 임예찬 </div>
+	</body>
+</html>
